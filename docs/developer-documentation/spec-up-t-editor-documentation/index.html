@@ -1,0 +1,680 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-developer-documentation/spec-up-t-editor-documentation" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.8.1">
+<title data-rh="true">Spec-Up-T Editor | Spec-Up-T</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://blockchainbird.github.io/spec-up-t-website/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://blockchainbird.github.io/spec-up-t-website/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://blockchainbird.github.io/spec-up-t-website/docs/developer-documentation/spec-up-t-editor-documentation"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Spec-Up-T Editor | Spec-Up-T"><meta data-rh="true" name="description" content="Table of Contents"><meta data-rh="true" property="og:description" content="Table of Contents"><link data-rh="true" rel="icon" href="/spec-up-t-website/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://blockchainbird.github.io/spec-up-t-website/docs/developer-documentation/spec-up-t-editor-documentation"><link data-rh="true" rel="alternate" href="https://blockchainbird.github.io/spec-up-t-website/docs/developer-documentation/spec-up-t-editor-documentation" hreflang="en"><link data-rh="true" rel="alternate" href="https://blockchainbird.github.io/spec-up-t-website/docs/developer-documentation/spec-up-t-editor-documentation" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"💻 Developer Documentation","item":"https://blockchainbird.github.io/spec-up-t-website/docs/category/-developer-documentation"},{"@type":"ListItem","position":2,"name":"Spec-Up-T Editor","item":"https://blockchainbird.github.io/spec-up-t-website/docs/developer-documentation/spec-up-t-editor-documentation"}]}</script><link rel="stylesheet" href="/spec-up-t-website/assets/css/styles.b158cdde.css">
+<script src="/spec-up-t-website/assets/js/runtime~main.58e8fbe4.js" defer="defer"></script>
+<script src="/spec-up-t-website/assets/js/main.0fb7a016.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t="light";var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",e||t),document.documentElement.setAttribute("data-theme-choice",e||t)}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/spec-up-t-website/"><div class="navbar__logo"><img src="/spec-up-t-website/img/logo.svg" alt="Spec-Up-T Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/spec-up-t-website/img/logo.svg" alt="Spec-Up-T Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Home</b></a><a class="navbar__item navbar__link" href="/spec-up-t-website/docs/introduction/overview/">Enter Documentation</a><a class="navbar__item navbar__link" href="/spec-up-t-website/docs/spec-up-t-demo-site">Demo</a><a class="navbar__item navbar__link" href="/spec-up-t-website/docs/getting-started/github-token">GitHub token</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/blockchainbird/spec-up-t-website" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"><div class="navbar__search searchBarContainer_NW3z" dir="ltr"><input placeholder="Search" aria-label="Search" class="navbar__search-input" value=""><div class="loadingRing_RJI3 searchBarLoadingRing_YnHq"><div></div><div></div><div></div><div></div></div></div></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/spec-up-t-website/docs/category/-introduction">📖 Introduction</a><button aria-label="Expand sidebar category &#x27;📖 Introduction&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/spec-up-t-website/docs/category/-getting-started">🚀 Getting Started</a><button aria-label="Expand sidebar category &#x27;🚀 Getting Started&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/spec-up-t-website/docs/category/️-user-interface-overview">🖥️ User Interface Overview</a><button aria-label="Expand sidebar category &#x27;🖥️ User Interface Overview&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/spec-up-t-website/docs/category/-role-based-guides">👥 Role-Based Guides</a><button aria-label="Expand sidebar category &#x27;👥 Role-Based Guides&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/spec-up-t-website/docs/category/-advanced-features">⚡ Advanced Features</a><button aria-label="Expand sidebar category &#x27;⚡ Advanced Features&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/spec-up-t-website/docs/category/-maintenance-tasks">🔧 Maintenance Tasks</a><button aria-label="Expand sidebar category &#x27;🔧 Maintenance Tasks&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/spec-up-t-website/docs/faq">❓ FAQ</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/spec-up-t-website/docs/troubleshooting">🚑 Troubleshooting</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/spec-up-t-website/docs/glossary">📖 Glossary</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/spec-up-t-website/docs/spec-up-t-demo-site">🎯 Spec-Up-T demo</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" href="/spec-up-t-website/docs/category/-developer-documentation">💻 Developer Documentation</a><button aria-label="Collapse sidebar category &#x27;💻 Developer Documentation&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/spec-up-t-website/docs/developer-documentation/intro">Introduction</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/spec-up-t-website/docs/developer-documentation/github-repositories">GitHub Repositories</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/spec-up-t-website/docs/developer-documentation/publishing-to-github-and-npm">Publishing to GitHub and npm</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/spec-up-t-website/docs/developer-documentation/web-of-repos">Web of Repo&#x27;s</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" tabindex="0" href="/spec-up-t-website/docs/category/setting-up-environment">Setting Up Environment</a><button aria-label="Expand sidebar category &#x27;Setting Up Environment&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" tabindex="0" href="/spec-up-t-website/docs/category/specreforg">Specref.org</a><button aria-label="Expand sidebar category &#x27;Specref.org&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" tabindex="0" href="/spec-up-t-website/docs/category/scripts">Scripts</a><button aria-label="Expand sidebar category &#x27;Scripts&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/spec-up-t-website/docs/developer-documentation/difference-xref-tref">TREF vs XREF</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/spec-up-t-website/docs/developer-documentation/index-html-content">Inside index.html</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/spec-up-t-website/docs/developer-documentation/spec-up-t-editor-documentation">Spec-Up-T Editor</a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/spec-up-t-website/docs/category/️-tools">🛠️ Tools</a><button aria-label="Expand sidebar category &#x27;🛠️ Tools&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/spec-up-t-website/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/spec-up-t-website/docs/category/-developer-documentation"><span>💻 Developer Documentation</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Spec-Up-T Editor</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Spec-Up-T Editor</h1></header>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="table-of-contents">Table of Contents<a href="#table-of-contents" class="hash-link" aria-label="Direct link to Table of Contents" title="Direct link to Table of Contents">​</a></h2>
+<ol>
+<li><a href="#overview">Overview</a></li>
+<li><a href="#features">Features</a></li>
+<li><a href="#architecture">Architecture</a></li>
+<li><a href="#installation--setup">Installation &amp; Setup</a></li>
+<li><a href="#configuration">Configuration</a></li>
+<li><a href="#user-guide">User Guide</a></li>
+<li><a href="#components-documentation">Components Documentation</a></li>
+<li><a href="#api-integration">API Integration</a></li>
+<li><a href="#health-check-system">Health Check System</a></li>
+<li><a href="#security-considerations">Security Considerations</a></li>
+<li><a href="#development-guidelines">Development Guidelines</a></li>
+<li><a href="#troubleshooting">Troubleshooting</a></li>
+<li><a href="#contributing">Contributing</a></li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="overview">Overview<a href="#overview" class="hash-link" aria-label="Direct link to Overview" title="Direct link to Overview">​</a></h2>
+<p>The <strong>Spec-Up-T Editor</strong> is a sophisticated web-based application built with Vue.js 3 that provides an intuitive interface for editing and managing specification files stored in GitHub repositories. It&#x27;s designed specifically for teams working with structured documentation and specification formats, offering seamless GitHub integration and collaborative editing capabilities.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="key-benefits">Key Benefits<a href="#key-benefits" class="hash-link" aria-label="Direct link to Key Benefits" title="Direct link to Key Benefits">​</a></h3>
+<ul>
+<li><strong>Zero Installation</strong>: Web-based interface requiring no local software installation</li>
+<li><strong>GitHub Integration</strong>: Direct read/write access to GitHub repositories via API</li>
+<li><strong>Collaborative</strong>: Multiple users can work on the same repository</li>
+<li><strong>Spec-Focused</strong>: Optimized for specification and documentation workflows</li>
+<li><strong>Health Monitoring</strong>: Built-in repository health checking and validation</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="features">Features<a href="#features" class="hash-link" aria-label="Direct link to Features" title="Direct link to Features">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="core-functionality">Core Functionality<a href="#core-functionality" class="hash-link" aria-label="Direct link to Core Functionality" title="Direct link to Core Functionality">​</a></h3>
+<ul>
+<li><strong>GitHub Authentication</strong>: Secure login using GitHub Personal Access Tokens</li>
+<li><strong>Repository Management</strong>: Browse and access GitHub repositories with branch selection</li>
+<li><strong>File Explorer</strong>: Navigate through specification directories with advanced filtering</li>
+<li><strong>WYSIWYG Editor</strong>: Rich text editor with markdown support and live preview</li>
+<li><strong>External Specifications</strong>: Manage references to external specification repositories</li>
+<li><strong>Health Checking</strong>: Comprehensive repository validation and health monitoring</li>
+<li><strong>Terms Management</strong>: Built-in glossary and terminology management</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="advanced-features">Advanced Features<a href="#advanced-features" class="hash-link" aria-label="Direct link to Advanced Features" title="Direct link to Advanced Features">​</a></h3>
+<ul>
+<li><strong>Visited Repository History</strong>: Automatic tracking of recently accessed repositories</li>
+<li><strong>Real-time File Creation</strong>: Create new files directly through the interface</li>
+<li><strong>Commit Integration</strong>: Direct Git commits with custom messages</li>
+<li><strong>Responsive Design</strong>: Mobile-friendly interface using Bootstrap 5</li>
+<li><strong>Analytics Integration</strong>: Optional Google Analytics tracking</li>
+<li><strong>Build Information</strong>: Display build metadata and version information</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="architecture">Architecture<a href="#architecture" class="hash-link" aria-label="Direct link to Architecture" title="Direct link to Architecture">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="technology-stack">Technology Stack<a href="#technology-stack" class="hash-link" aria-label="Direct link to Technology Stack" title="Direct link to Technology Stack">​</a></h3>
+<ul>
+<li><strong>Frontend Framework</strong>: Vue.js 3 with Composition API</li>
+<li><strong>Routing</strong>: Vue Router 4 for single-page application navigation</li>
+<li><strong>HTTP Client</strong>: Axios for GitHub API communication</li>
+<li><strong>UI Framework</strong>: Bootstrap 5 with Bootstrap Icons</li>
+<li><strong>Build Tool</strong>: Vite for development and production builds</li>
+<li><strong>Styling</strong>: SCSS with custom Bootstrap theme</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="project-structure">Project Structure<a href="#project-structure" class="hash-link" aria-label="Direct link to Project Structure" title="Direct link to Project Structure">​</a></h3>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">src/</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">├── components/           # Vue components</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">│   ├── BackToTop.vue    # Scroll-to-top functionality</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">│   ├── ExternalSpecsManager.vue  # External specs management</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">│   ├── FileEditor.vue   # Main file editing interface</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">│   ├── FileExplorer.vue # Repository file browser</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">│   ├── HealthCheck.vue  # Repository health monitoring</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">│   ├── HomePage.vue     # Main dashboard</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">│   ├── LoginPage.vue    # GitHub authentication</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">│   ├── MainNav.vue      # Navigation component</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">│   └── Modal.vue        # Reusable modal component</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">├── composables/         # Vue composables</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">│   └── useGoogleAnalytics.js  # Analytics integration</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">├── generated/           # Generated build files</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">│   └── build-info-fallback.js</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">├── styles/              # Styling</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">│   └── custom-bootstrap.scss</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">├── types/               # TypeScript definitions</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">│   └── global.d.ts</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">├── utils/               # Utility functions</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">│   ├── build-info.js</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">│   ├── googleAnalytics.js</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">│   └── visitedRepos.js</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">├── App.vue             # Root component</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">└── main.js             # Application entry point</span><br></span></code></pre></div></div>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="installation--setup">Installation &amp; Setup<a href="#installation--setup" class="hash-link" aria-label="Direct link to Installation &amp; Setup" title="Direct link to Installation &amp; Setup">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="prerequisites">Prerequisites<a href="#prerequisites" class="hash-link" aria-label="Direct link to Prerequisites" title="Direct link to Prerequisites">​</a></h3>
+<ul>
+<li><strong>Node.js</strong>: Version 16 or higher</li>
+<li><strong>npm</strong>: Comes with Node.js</li>
+<li><strong>GitHub Personal Access Token</strong>: With repository permissions</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="local-development-setup">Local Development Setup<a href="#local-development-setup" class="hash-link" aria-label="Direct link to Local Development Setup" title="Direct link to Local Development Setup">​</a></h3>
+<ol>
+<li>
+<p><strong>Clone the Repository</strong></p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">git clone https://github.com/blockchainbird/GitHubUi.git</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">cd GitHubUi</span><br></span></code></pre></div></div>
+</li>
+<li>
+<p><strong>Install Dependencies</strong></p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">npm install</span><br></span></code></pre></div></div>
+</li>
+<li>
+<p><strong>Environment Configuration</strong></p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">cp .env.example .env</span><br></span></code></pre></div></div>
+<p>Configure the following environment variables:</p>
+<div class="language-env codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-env codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">VITE_GA_MEASUREMENT_ID=your_google_analytics_id</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">VITE_BASE_PATH=/</span><br></span></code></pre></div></div>
+</li>
+<li>
+<p><strong>Start Development Server</strong></p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">npm run dev</span><br></span></code></pre></div></div>
+</li>
+<li>
+<p><strong>Access the Application</strong></p>
+<ul>
+<li>Open browser to <code>http://localhost:3000</code></li>
+<li>Use your GitHub Personal Access Token to authenticate</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="production-build">Production Build<a href="#production-build" class="hash-link" aria-label="Direct link to Production Build" title="Direct link to Production Build">​</a></h3>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain"># Build for production</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">npm run build</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"># Preview production build</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">npm run preview</span><br></span></code></pre></div></div>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="deployment">Deployment<a href="#deployment" class="hash-link" aria-label="Direct link to Deployment" title="Direct link to Deployment">​</a></h3>
+<p>The application is designed to be deployed as a static site. The build output in the <code>dist/</code> directory can be served by any static file server or CDN.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="configuration">Configuration<a href="#configuration" class="hash-link" aria-label="Direct link to Configuration" title="Direct link to Configuration">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="github-token-setup">GitHub Token Setup<a href="#github-token-setup" class="hash-link" aria-label="Direct link to GitHub Token Setup" title="Direct link to GitHub Token Setup">​</a></h3>
+<ol>
+<li>Navigate to <a href="https://github.com/settings/tokens" target="_blank" rel="noopener noreferrer">GitHub Settings &gt; Personal Access Tokens</a></li>
+<li>Generate a new token with the following permissions:<!-- -->
+<ul>
+<li><code>repo</code> (Full control of private repositories)</li>
+<li><code>read:user</code> (Read user profile data)</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="repository-configuration">Repository Configuration<a href="#repository-configuration" class="hash-link" aria-label="Direct link to Repository Configuration" title="Direct link to Repository Configuration">​</a></h3>
+<p>The application looks for a <code>specs.json</code> file in the repository root with this structure:</p>
+<div class="language-json codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-json codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token property" style="color:#36acaa">&quot;specs&quot;</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      </span><span class="token property" style="color:#36acaa">&quot;spec_directory&quot;</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&quot;docs&quot;</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      </span><span class="token property" style="color:#36acaa">&quot;external_specs&quot;</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">          </span><span class="token property" style="color:#36acaa">&quot;external_spec&quot;</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&quot;unique_identifier&quot;</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">          </span><span class="token property" style="color:#36acaa">&quot;gh_page&quot;</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&quot;https://example.github.io/spec/&quot;</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">          </span><span class="token property" style="color:#36acaa">&quot;url&quot;</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&quot;https://github.com/user/repo&quot;</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">          </span><span class="token property" style="color:#36acaa">&quot;terms_dir&quot;</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&quot;spec/terms-definitions&quot;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        </span><span class="token punctuation" style="color:#393A34">}</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      </span><span class="token punctuation" style="color:#393A34">]</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token punctuation" style="color:#393A34">}</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token punctuation" style="color:#393A34">]</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">}</span><br></span></code></pre></div></div>
+<p><strong>Configuration Options:</strong></p>
+<ul>
+<li><code>spec_directory</code>: Directory containing specification files (default: &quot;specs&quot;)</li>
+<li><code>external_specs</code>: Array of external specification references</li>
+<li><code>external_spec</code>: Unique identifier for the external specification</li>
+<li><code>gh_page</code>: GitHub Pages URL where the spec is hosted</li>
+<li><code>url</code>: Source repository URL</li>
+<li><code>terms_dir</code>: Directory path for terms and definitions</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="user-guide">User Guide<a href="#user-guide" class="hash-link" aria-label="Direct link to User Guide" title="Direct link to User Guide">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="getting-started">Getting Started<a href="#getting-started" class="hash-link" aria-label="Direct link to Getting Started" title="Direct link to Getting Started">​</a></h3>
+<ol>
+<li>
+<p><strong>Authentication</strong></p>
+<ul>
+<li>Navigate to the login page</li>
+<li>Enter your GitHub Personal Access Token</li>
+<li>Click &quot;Login with GitHub&quot;</li>
+</ul>
+</li>
+<li>
+<p><strong>Repository Access</strong></p>
+<ul>
+<li>Enter GitHub username/organization and repository name</li>
+<li>Select the appropriate branch</li>
+<li>Click &quot;Access Repository&quot;</li>
+</ul>
+</li>
+<li>
+<p><strong>File Management</strong></p>
+<ul>
+<li>Browse files using the file explorer</li>
+<li>Filter files by name or type</li>
+<li>Create new files using the &quot;+&quot; button</li>
+<li>Click on any file to open it in the editor</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="file-editing-workflow">File Editing Workflow<a href="#file-editing-workflow" class="hash-link" aria-label="Direct link to File Editing Workflow" title="Direct link to File Editing Workflow">​</a></h3>
+<ol>
+<li><strong>Open File</strong>: Click on a file in the explorer</li>
+<li><strong>Edit Content</strong>: Use the WYSIWYG editor with toolbar options</li>
+<li><strong>Preview</strong>: Toggle between Edit and Preview modes</li>
+<li><strong>Save Changes</strong>: Provide a commit message and save to GitHub</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="external-specifications-management">External Specifications Management<a href="#external-specifications-management" class="hash-link" aria-label="Direct link to External Specifications Management" title="Direct link to External Specifications Management">​</a></h3>
+<ol>
+<li><strong>Access Manager</strong>: Click &quot;External Specs&quot; in the navigation</li>
+<li><strong>Add Specifications</strong>: Use single or bulk import modes</li>
+<li><strong>Configure References</strong>: Set up GitHub Pages URLs and terms directories</li>
+<li><strong>Save Changes</strong>: Commit changes to the specs.json file</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="health-check-system">Health Check System<a href="#health-check-system" class="hash-link" aria-label="Direct link to Health Check System" title="Direct link to Health Check System">​</a></h3>
+<ol>
+<li><strong>Run Health Check</strong>: Click &quot;Health Check&quot; in the navigation</li>
+<li><strong>Review Results</strong>: Examine repository configuration and file integrity</li>
+<li><strong>Address Issues</strong>: Follow recommendations to fix identified problems</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="components-documentation">Components Documentation<a href="#components-documentation" class="hash-link" aria-label="Direct link to Components Documentation" title="Direct link to Components Documentation">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="mainnavvue">MainNav.vue<a href="#mainnavvue" class="hash-link" aria-label="Direct link to MainNav.vue" title="Direct link to MainNav.vue">​</a></h3>
+<p><strong>Purpose</strong>: Main navigation component with context-aware buttons</p>
+<p><strong>Features</strong>:</p>
+<ul>
+<li>Home navigation</li>
+<li>About modal with build information</li>
+<li>Repository-specific actions (External Specs, Health Check, GitHub link)</li>
+<li>Dynamic button visibility based on current context</li>
+</ul>
+<p><strong>Props</strong>: None (uses route parameters)</p>
+<p><strong>Key Methods</strong>:</p>
+<ul>
+<li><code>navigateToHealthCheck()</code>: Navigate to health check page</li>
+<li><code>showRepoRelatedButtons</code>: Computed property for conditional button display</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="loginpagevue">LoginPage.vue<a href="#loginpagevue" class="hash-link" aria-label="Direct link to LoginPage.vue" title="Direct link to LoginPage.vue">​</a></h3>
+<p><strong>Purpose</strong>: GitHub authentication interface</p>
+<p><strong>Features</strong>:</p>
+<ul>
+<li>Secure token input with password masking</li>
+<li>Token validation via GitHub API</li>
+<li>Automatic redirect to intended destination</li>
+<li>Error handling and user feedback</li>
+</ul>
+<p><strong>Events</strong>:</p>
+<ul>
+<li><code>@login</code>: Emitted when authentication succeeds</li>
+</ul>
+<p><strong>Security</strong>: Tokens are validated against GitHub API before storage</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="homepagevue">HomePage.vue<a href="#homepagevue" class="hash-link" aria-label="Direct link to HomePage.vue" title="Direct link to HomePage.vue">​</a></h3>
+<p><strong>Purpose</strong>: Main dashboard for repository selection</p>
+<p><strong>Features</strong>:</p>
+<ul>
+<li>Repository input with autocomplete</li>
+<li>Branch selection modal</li>
+<li>Recently visited repositories history</li>
+<li>Repository validation</li>
+</ul>
+<p><strong>Key Features</strong>:</p>
+<ul>
+<li>Dynamic repository fetching</li>
+<li>Branch filtering and selection</li>
+<li>Visit history management with local storage</li>
+<li>Responsive card-based layout</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="fileexplorervue">FileExplorer.vue<a href="#fileexplorervue" class="hash-link" aria-label="Direct link to FileExplorer.vue" title="Direct link to FileExplorer.vue">​</a></h3>
+<p><strong>Purpose</strong>: Repository file browser with advanced filtering</p>
+<p><strong>Features</strong>:</p>
+<ul>
+<li>Hierarchical file navigation</li>
+<li>Advanced filtering (All, Markdown, Images, etc.)</li>
+<li>File creation capabilities</li>
+<li>Recently created file highlighting</li>
+</ul>
+<p><strong>Filtering Options</strong>:</p>
+<ul>
+<li>All files</li>
+<li>Markdown files (.md)</li>
+<li>Image files (.png, .jpg, .gif, .svg)</li>
+<li>JSON files (.json)</li>
+<li>Text files (.txt)</li>
+</ul>
+<p><strong>Key Methods</strong>:</p>
+<ul>
+<li><code>loadSpecFiles()</code>: Load files from current directory</li>
+<li><code>createNewFile()</code>: Create new files via GitHub API</li>
+<li><code>applyFilter()</code>: Apply selected file filters</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="fileeditorvue">FileEditor.vue<a href="#fileeditorvue" class="hash-link" aria-label="Direct link to FileEditor.vue" title="Direct link to FileEditor.vue">​</a></h3>
+<p><strong>Purpose</strong>: Main file editing interface with WYSIWYG capabilities</p>
+<p><strong>Features</strong>:</p>
+<ul>
+<li>Rich text editing with toolbar</li>
+<li>Live markdown preview</li>
+<li>Terms management integration</li>
+<li>Auto-save functionality</li>
+<li>Commit message customization</li>
+</ul>
+<p><strong>Editor Capabilities</strong>:</p>
+<ul>
+<li>Bold, italic, and basic formatting</li>
+<li>Header level selection</li>
+<li>List creation (ordered/unordered)</li>
+<li>Link insertion</li>
+<li>Code block support</li>
+</ul>
+<p><strong>Terms Integration</strong>:</p>
+<ul>
+<li>Automatic term detection</li>
+<li>External specification references</li>
+<li>Glossary management</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="externalspecsmanagervue">ExternalSpecsManager.vue<a href="#externalspecsmanagervue" class="hash-link" aria-label="Direct link to ExternalSpecsManager.vue" title="Direct link to ExternalSpecsManager.vue">​</a></h3>
+<p><strong>Purpose</strong>: Management interface for external specification references</p>
+<p><strong>Features</strong>:</p>
+<ul>
+<li>Single and bulk specification import</li>
+<li>JSON validation and parsing</li>
+<li>Duplicate detection and handling</li>
+<li>URL validation for external resources</li>
+</ul>
+<p><strong>Import Methods</strong>:</p>
+<ul>
+<li><strong>Single Mode</strong>: Add specifications one at a time</li>
+<li><strong>Bulk JSON</strong>: Import multiple specifications from JSON</li>
+<li><strong>GitHub URL</strong>: Import from external GitHub JSON files</li>
+</ul>
+<p><strong>Validation</strong>:</p>
+<ul>
+<li>URL format validation</li>
+<li>Required field checking</li>
+<li>Duplicate identification</li>
+<li>JSON structure validation</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="healthcheckvue">HealthCheck.vue<a href="#healthcheckvue" class="hash-link" aria-label="Direct link to HealthCheck.vue" title="Direct link to HealthCheck.vue">​</a></h3>
+<p><strong>Purpose</strong>: Comprehensive repository health monitoring</p>
+<p><strong>Health Check Categories</strong>:</p>
+<ol>
+<li>
+<p><strong>Repository Information</strong></p>
+<ul>
+<li>Repository accessibility</li>
+<li>Branch existence</li>
+<li>Basic metadata validation</li>
+</ul>
+</li>
+<li>
+<p><strong>Specs Configuration</strong></p>
+<ul>
+<li>specs.json existence and validity</li>
+<li>Configuration structure validation</li>
+<li>Directory path verification</li>
+</ul>
+</li>
+<li>
+<p><strong>External Specifications</strong></p>
+<ul>
+<li>URL accessibility testing</li>
+<li>GitHub repository validation</li>
+<li>Terms directory verification</li>
+</ul>
+</li>
+<li>
+<p><strong>File Structure</strong></p>
+<ul>
+<li>Required file presence</li>
+<li>Directory structure validation</li>
+<li>File naming conventions</li>
+</ul>
+</li>
+<li>
+<p><strong>Git Configuration</strong></p>
+<ul>
+<li>.gitignore completeness</li>
+<li>Branch protection status</li>
+<li>Repository settings</li>
+</ul>
+</li>
+</ol>
+<p><strong>Result Types</strong>:</p>
+<ul>
+<li>✅ <strong>Success</strong>: All checks passed</li>
+<li>⚠️ <strong>Warning</strong>: Non-critical issues detected</li>
+<li>❌ <strong>Error</strong>: Critical problems requiring attention</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="api-integration">API Integration<a href="#api-integration" class="hash-link" aria-label="Direct link to API Integration" title="Direct link to API Integration">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="github-api-usage">GitHub API Usage<a href="#github-api-usage" class="hash-link" aria-label="Direct link to GitHub API Usage" title="Direct link to GitHub API Usage">​</a></h3>
+<p>The application uses GitHub&#x27;s REST API v3 for all repository operations:</p>
+<p><strong>Authentication</strong>:</p>
+<div class="language-javascript codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-javascript codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token literal-property property" style="color:#36acaa">headers</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token string-property property" style="color:#36acaa">&#x27;Authorization&#x27;</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token template-string template-punctuation string" style="color:#e3116c">`</span><span class="token template-string string" style="color:#e3116c">token </span><span class="token template-string interpolation interpolation-punctuation punctuation" style="color:#393A34">${</span><span class="token template-string interpolation">githubToken</span><span class="token template-string interpolation interpolation-punctuation punctuation" style="color:#393A34">}</span><span class="token template-string template-punctuation string" style="color:#e3116c">`</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token string-property property" style="color:#36acaa">&#x27;Accept&#x27;</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&#x27;application/vnd.github.v3+json&#x27;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">}</span><br></span></code></pre></div></div>
+<p><strong>Key API Endpoints</strong>:</p>
+<ol>
+<li>
+<p><strong>User Authentication</strong></p>
+<div class="language-http codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-http codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">GET /user</span><br></span></code></pre></div></div>
+</li>
+<li>
+<p><strong>Repository Access</strong></p>
+<div class="language-http codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-http codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">GET /repos/:owner/:repo</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">GET /repos/:owner/:repo/branches</span><br></span></code></pre></div></div>
+</li>
+<li>
+<p><strong>File Operations</strong></p>
+<div class="language-http codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-http codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">GET /repos/:owner/:repo/contents/:path</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">PUT /repos/:owner/:repo/contents/:path</span><br></span></code></pre></div></div>
+</li>
+<li>
+<p><strong>Content Management</strong></p>
+<div class="language-http codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-http codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">GET /repos/:owner/:repo/contents/:path?ref=:branch</span><br></span></code></pre></div></div>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="error-handling">Error Handling<a href="#error-handling" class="hash-link" aria-label="Direct link to Error Handling" title="Direct link to Error Handling">​</a></h3>
+<p>The application implements comprehensive error handling:</p>
+<ul>
+<li><strong>401/403 Errors</strong>: Automatic token refresh and login redirect</li>
+<li><strong>404 Errors</strong>: Graceful fallback to default configurations</li>
+<li><strong>Rate Limiting</strong>: Appropriate error messages and retry suggestions</li>
+<li><strong>Network Errors</strong>: User-friendly error reporting</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="caching-strategy">Caching Strategy<a href="#caching-strategy" class="hash-link" aria-label="Direct link to Caching Strategy" title="Direct link to Caching Strategy">​</a></h3>
+<ul>
+<li><strong>Repository Metadata</strong>: Cached in localStorage</li>
+<li><strong>File Content</strong>: Session-based caching</li>
+<li><strong>User Preferences</strong>: Persistent localStorage</li>
+<li><strong>Visit History</strong>: Persistent with automatic cleanup</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="health-check-implementation">Health Check Implementation<a href="#health-check-implementation" class="hash-link" aria-label="Direct link to Health Check Implementation" title="Direct link to Health Check Implementation">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="implementation-details">Implementation Details<a href="#implementation-details" class="hash-link" aria-label="Direct link to Implementation Details" title="Direct link to Implementation Details">​</a></h3>
+<p>The health check system provides comprehensive repository validation through multiple check categories:</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="check-categories">Check Categories<a href="#check-categories" class="hash-link" aria-label="Direct link to Check Categories" title="Direct link to Check Categories">​</a></h4>
+<ol>
+<li>
+<p><strong>Repository Validation</strong></p>
+<ul>
+<li>Verifies repository accessibility</li>
+<li>Confirms branch existence</li>
+<li>Validates user permissions</li>
+</ul>
+</li>
+<li>
+<p><strong>Configuration Validation</strong></p>
+<ul>
+<li>Validates specs.json structure</li>
+<li>Checks directory paths</li>
+<li>Verifies external specification references</li>
+</ul>
+</li>
+<li>
+<p><strong>File Structure Analysis</strong></p>
+<ul>
+<li>Analyzes directory organization</li>
+<li>Validates file naming conventions</li>
+<li>Checks for required files</li>
+</ul>
+</li>
+<li>
+<p><strong>External Resource Verification</strong></p>
+<ul>
+<li>Tests external URL accessibility</li>
+<li>Validates GitHub repository links</li>
+<li>Checks terms directory existence</li>
+</ul>
+</li>
+</ol>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="health-check-results">Health Check Results<a href="#health-check-results" class="hash-link" aria-label="Direct link to Health Check Results" title="Direct link to Health Check Results">​</a></h4>
+<p>Results are categorized into three types:</p>
+<ul>
+<li><strong>Success (✅)</strong>: All validations passed</li>
+<li><strong>Warning (⚠️)</strong>: Issues detected but not critical</li>
+<li><strong>Error (❌)</strong>: Critical problems requiring immediate attention</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="usage-recommendations">Usage Recommendations<a href="#usage-recommendations" class="hash-link" aria-label="Direct link to Usage Recommendations" title="Direct link to Usage Recommendations">​</a></h4>
+<ul>
+<li>Run health checks before major edits</li>
+<li>Address all errors before deployment</li>
+<li>Monitor warnings for potential issues</li>
+<li>Use health check results to guide repository maintenance</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="security-considerations">Security Considerations<a href="#security-considerations" class="hash-link" aria-label="Direct link to Security Considerations" title="Direct link to Security Considerations">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="authentication-security">Authentication Security<a href="#authentication-security" class="hash-link" aria-label="Direct link to Authentication Security" title="Direct link to Authentication Security">​</a></h3>
+<ul>
+<li><strong>Token Storage</strong>: Tokens stored in localStorage (consider sessionStorage for higher security)</li>
+<li><strong>Token Validation</strong>: All tokens validated against GitHub API</li>
+<li><strong>Automatic Expiration</strong>: Invalid tokens automatically cleared</li>
+<li><strong>Secure Transmission</strong>: All API calls use HTTPS</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="data-protection">Data Protection<a href="#data-protection" class="hash-link" aria-label="Direct link to Data Protection" title="Direct link to Data Protection">​</a></h3>
+<ul>
+<li><strong>Client-Side Only</strong>: No server-side data storage</li>
+<li><strong>Temporary Caching</strong>: File content cached only during editing sessions</li>
+<li><strong>User Control</strong>: Users maintain full control over their data</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="best-practices">Best Practices<a href="#best-practices" class="hash-link" aria-label="Direct link to Best Practices" title="Direct link to Best Practices">​</a></h3>
+<ol>
+<li>
+<p><strong>Token Management</strong>:</p>
+<ul>
+<li>Use tokens with minimal required permissions</li>
+<li>Regularly rotate personal access tokens</li>
+<li>Monitor token usage in GitHub settings</li>
+</ul>
+</li>
+<li>
+<p><strong>Repository Access</strong>:</p>
+<ul>
+<li>Verify repository permissions before editing</li>
+<li>Use branch protection for critical repositories</li>
+<li>Maintain backup branches for important content</li>
+</ul>
+</li>
+<li>
+<p><strong>Content Security</strong>:</p>
+<ul>
+<li>Review all commits before pushing</li>
+<li>Use descriptive commit messages</li>
+<li>Validate external links regularly</li>
+</ul>
+</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="development-guidelines">Development Guidelines<a href="#development-guidelines" class="hash-link" aria-label="Direct link to Development Guidelines" title="Direct link to Development Guidelines">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="code-quality-standards">Code Quality Standards<a href="#code-quality-standards" class="hash-link" aria-label="Direct link to Code Quality Standards" title="Direct link to Code Quality Standards">​</a></h3>
+<p>Following the provided coding instructions:</p>
+<ol>
+<li><strong>SonarQube Compliance</strong>: All code must pass SonarQube analysis</li>
+<li><strong>Cognitive Complexity</strong>: Keep complexity below 15 per function</li>
+<li><strong>Code Reduction</strong>: Prefer removing code over adding when possible</li>
+<li><strong>Duplication Avoidance</strong>: Eliminate duplicate code while maintaining low complexity</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="component-development-guidelines">Component Development Guidelines<a href="#component-development-guidelines" class="hash-link" aria-label="Direct link to Component Development Guidelines" title="Direct link to Component Development Guidelines">​</a></h3>
+<ol>
+<li><strong>Composition API</strong>: Use Vue 3 Composition API for all new components</li>
+<li><strong>TypeScript</strong>: Gradually migrate to TypeScript for better type safety</li>
+<li><strong>Single Responsibility</strong>: Each component should have a single, clear purpose</li>
+<li><strong>Props and Events</strong>: Use clear prop interfaces and documented events</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="file-organization">File Organization<a href="#file-organization" class="hash-link" aria-label="Direct link to File Organization" title="Direct link to File Organization">​</a></h3>
+<ul>
+<li><strong>Components</strong>: Group related functionality in single files</li>
+<li><strong>Composables</strong>: Extract reusable logic into composables</li>
+<li><strong>Utils</strong>: Create utility functions for common operations</li>
+<li><strong>Types</strong>: Define TypeScript interfaces for complex data structures</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="testing-strategy">Testing Strategy<a href="#testing-strategy" class="hash-link" aria-label="Direct link to Testing Strategy" title="Direct link to Testing Strategy">​</a></h3>
+<p>While tests are not currently implemented, consider:</p>
+<ol>
+<li><strong>Unit Tests</strong>: Test individual component logic</li>
+<li><strong>Integration Tests</strong>: Test GitHub API integration</li>
+<li><strong>E2E Tests</strong>: Test complete user workflows</li>
+<li><strong>Visual Tests</strong>: Ensure UI consistency across browsers</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="performance-optimization">Performance Optimization<a href="#performance-optimization" class="hash-link" aria-label="Direct link to Performance Optimization" title="Direct link to Performance Optimization">​</a></h3>
+<ol>
+<li><strong>Lazy Loading</strong>: Implement component and route lazy loading</li>
+<li><strong>Caching</strong>: Optimize API response caching</li>
+<li><strong>Bundle Size</strong>: Monitor and optimize bundle size</li>
+<li><strong>Image Optimization</strong>: Compress and optimize assets</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="troubleshooting">Troubleshooting<a href="#troubleshooting" class="hash-link" aria-label="Direct link to Troubleshooting" title="Direct link to Troubleshooting">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="common-issues">Common Issues<a href="#common-issues" class="hash-link" aria-label="Direct link to Common Issues" title="Direct link to Common Issues">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="authentication-problems">Authentication Problems<a href="#authentication-problems" class="hash-link" aria-label="Direct link to Authentication Problems" title="Direct link to Authentication Problems">​</a></h4>
+<p><strong>Issue</strong>: &quot;Invalid token&quot; error</p>
+<p><strong>Solutions</strong>:</p>
+<ul>
+<li>Verify token has correct permissions (repo, read<!-- -->:user<!-- -->)</li>
+<li>Check token expiration date</li>
+<li>Regenerate token if necessary</li>
+<li>Clear browser cache and localStorage</li>
+</ul>
+<p><strong>Issue</strong>: &quot;Access forbidden&quot; error</p>
+<p><strong>Solutions</strong>:</p>
+<ul>
+<li>Verify repository permissions</li>
+<li>Check if repository is private and token has access</li>
+<li>Confirm organization membership for org repositories</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="file-loading-issues">File Loading Issues<a href="#file-loading-issues" class="hash-link" aria-label="Direct link to File Loading Issues" title="Direct link to File Loading Issues">​</a></h4>
+<p><strong>Issue</strong>: Files not displaying in explorer
+<strong>Solutions</strong>:</p>
+<ul>
+<li>Check specs.json configuration</li>
+<li>Verify spec_directory path</li>
+<li>Ensure branch exists and is accessible</li>
+<li>Check network connectivity</li>
+</ul>
+<p><strong>Issue</strong>: Cannot save files
+<strong>Solutions</strong>:</p>
+<ul>
+<li>Verify write permissions to repository</li>
+<li>Check file path validity</li>
+<li>Ensure commit message is provided</li>
+<li>Verify branch is not protected</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="health-check-failures">Health Check Failures<a href="#health-check-failures" class="hash-link" aria-label="Direct link to Health Check Failures" title="Direct link to Health Check Failures">​</a></h4>
+<p><strong>Issue</strong>: External specifications not accessible
+<strong>Solutions</strong>:</p>
+<ul>
+<li>Verify external URLs are correct and accessible</li>
+<li>Check CORS settings for external resources</li>
+<li>Validate GitHub repository URLs</li>
+<li>Test URLs manually in browser</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="performance-issues">Performance Issues<a href="#performance-issues" class="hash-link" aria-label="Direct link to Performance Issues" title="Direct link to Performance Issues">​</a></h4>
+<p><strong>Issue</strong>: Slow loading times
+<strong>Solutions</strong>:</p>
+<ul>
+<li>Check internet connection</li>
+<li>Clear browser cache</li>
+<li>Verify GitHub API rate limits</li>
+<li>Consider using a different branch</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="error-codes">Error Codes<a href="#error-codes" class="hash-link" aria-label="Direct link to Error Codes" title="Direct link to Error Codes">​</a></h3>
+<table><thead><tr><th>Error Code</th><th>Description</th><th>Solution</th></tr></thead><tbody><tr><td>401</td><td>Unauthorized</td><td>Check token validity</td></tr><tr><td>403</td><td>Forbidden</td><td>Verify repository permissions</td></tr><tr><td>404</td><td>Not Found</td><td>Check repository/file existence</td></tr><tr><td>422</td><td>Unprocessable Entity</td><td>Validate request data</td></tr><tr><td>429</td><td>Rate Limited</td><td>Wait and retry request</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="debug-information">Debug Information<a href="#debug-information" class="hash-link" aria-label="Direct link to Debug Information" title="Direct link to Debug Information">​</a></h3>
+<p>Enable debug mode by adding to localStorage:</p>
+<div class="language-javascript codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-javascript codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token dom variable" style="color:#36acaa">localStorage</span><span class="token punctuation" style="color:#393A34">.</span><span class="token method function property-access" style="color:#d73a49">setItem</span><span class="token punctuation" style="color:#393A34">(</span><span class="token string" style="color:#e3116c">&#x27;debug&#x27;</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&#x27;true&#x27;</span><span class="token punctuation" style="color:#393A34">)</span><br></span></code></pre></div></div>
+<p>This will enable:</p>
+<ul>
+<li>Console logging for API requests</li>
+<li>Detailed error information</li>
+<li>Performance timing data</li>
+<li>State change tracking</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="contributing">Contributing<a href="#contributing" class="hash-link" aria-label="Direct link to Contributing" title="Direct link to Contributing">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="development-setup">Development Setup<a href="#development-setup" class="hash-link" aria-label="Direct link to Development Setup" title="Direct link to Development Setup">​</a></h3>
+<ol>
+<li>
+<p><strong>Fork the Repository</strong></p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">git clone https://github.com/your-username/GitHubUi.git</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">cd GitHubUi</span><br></span></code></pre></div></div>
+</li>
+<li>
+<p><strong>Create Feature Branch</strong></p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">git checkout -b feature/your-feature-name</span><br></span></code></pre></div></div>
+</li>
+<li>
+<p><strong>Install Dependencies</strong></p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">npm install</span><br></span></code></pre></div></div>
+</li>
+<li>
+<p><strong>Start Development Server</strong></p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">npm run dev</span><br></span></code></pre></div></div>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="contribution-guidelines">Contribution Guidelines<a href="#contribution-guidelines" class="hash-link" aria-label="Direct link to Contribution Guidelines" title="Direct link to Contribution Guidelines">​</a></h3>
+<ol>
+<li>
+<p><strong>Code Standards</strong>:</p>
+<ul>
+<li>Follow existing code style and conventions</li>
+<li>Ensure SonarQube compliance</li>
+<li>Keep cognitive complexity low</li>
+<li>Add appropriate comments and documentation</li>
+</ul>
+</li>
+<li>
+<p><strong>Commit Messages</strong>:</p>
+<ul>
+<li>Use descriptive commit messages</li>
+<li>Follow conventional commit format</li>
+<li>Reference issue numbers when applicable</li>
+</ul>
+</li>
+<li>
+<p><strong>Pull Requests</strong>:</p>
+<ul>
+<li>Provide clear description of changes</li>
+<li>Include screenshots for UI changes</li>
+<li>Ensure all checks pass</li>
+<li>Request review from maintainers</li>
+</ul>
+</li>
+<li>
+<p><strong>Testing</strong>:</p>
+<ul>
+<li>Test changes thoroughly in development</li>
+<li>Verify functionality across different browsers</li>
+<li>Test with various repository configurations</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="feature-requests">Feature Requests<a href="#feature-requests" class="hash-link" aria-label="Direct link to Feature Requests" title="Direct link to Feature Requests">​</a></h3>
+<p>To request new features:</p>
+<ol>
+<li>Check existing issues for similar requests</li>
+<li>Create detailed issue with use case description</li>
+<li>Provide mockups or examples when applicable</li>
+<li>Engage in discussion with maintainers</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="bug-reports">Bug Reports<a href="#bug-reports" class="hash-link" aria-label="Direct link to Bug Reports" title="Direct link to Bug Reports">​</a></h3>
+<p>When reporting bugs:</p>
+<ol>
+<li>Use the bug report template</li>
+<li>Include detailed reproduction steps</li>
+<li>Provide browser and environment information</li>
+<li>Include screenshots or console errors</li>
+<li>Test against latest version</li>
+</ol>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="files-created-and-their-purpose">Files Created and Their Purpose<a href="#files-created-and-their-purpose" class="hash-link" aria-label="Direct link to Files Created and Their Purpose" title="Direct link to Files Created and Their Purpose">​</a></h2>
+<p>This documentation file (<code>DOCUMENTATION.md</code>) has been created to provide comprehensive guidance for users, developers, and contributors of the Spec-Up-T Editor project.</p>
+<p><strong>Why this file should stay:</strong></p>
+<ol>
+<li><strong>User Guidance</strong>: Provides complete instructions for setup, configuration, and usage</li>
+<li><strong>Developer Reference</strong>: Serves as technical documentation for code maintenance and feature development</li>
+<li><strong>Onboarding</strong>: Helps new team members understand the project architecture and workflows</li>
+<li><strong>Troubleshooting</strong>: Contains solutions to common problems and debugging information</li>
+<li><strong>Standards Documentation</strong>: Defines coding standards and contribution guidelines</li>
+</ol>
+<p><strong>How to use this file:</strong></p>
+<ol>
+<li><strong>New Users</strong>: Start with Overview and User Guide sections</li>
+<li><strong>Developers</strong>: Focus on Architecture, Components Documentation, and Development Guidelines</li>
+<li><strong>Contributors</strong>: Review Contributing section and development setup instructions</li>
+<li><strong>Maintainers</strong>: Use as reference for project standards and troubleshooting guide</li>
+<li><strong>Documentation Updates</strong>: Keep this file updated as features are added or changed</li>
+</ol>
+<p>This comprehensive documentation ensures the project remains maintainable, accessible, and well-documented for all stakeholders while following the principle of creating necessary files that provide clear value to the project.</p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/blockchainbird/spec-up-t-website/tree/main/docs/developer-documentation/spec-up-t-editor-documentation.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"><span class="theme-last-updated">Last updated<!-- --> on <b><time datetime="2025-07-25T17:05:19.000Z" itemprop="dateModified">Jul 25, 2025</time></b> by <b>Kor Dwarshuis</b></span></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/spec-up-t-website/docs/developer-documentation/index-html-content"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Inside index.html</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/spec-up-t-website/docs/category/️-tools"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">🛠️ Tools</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#table-of-contents" class="table-of-contents__link toc-highlight">Table of Contents</a></li><li><a href="#overview" class="table-of-contents__link toc-highlight">Overview</a><ul><li><a href="#key-benefits" class="table-of-contents__link toc-highlight">Key Benefits</a></li></ul></li><li><a href="#features" class="table-of-contents__link toc-highlight">Features</a><ul><li><a href="#core-functionality" class="table-of-contents__link toc-highlight">Core Functionality</a></li><li><a href="#advanced-features" class="table-of-contents__link toc-highlight">Advanced Features</a></li></ul></li><li><a href="#architecture" class="table-of-contents__link toc-highlight">Architecture</a><ul><li><a href="#technology-stack" class="table-of-contents__link toc-highlight">Technology Stack</a></li><li><a href="#project-structure" class="table-of-contents__link toc-highlight">Project Structure</a></li></ul></li><li><a href="#installation--setup" class="table-of-contents__link toc-highlight">Installation &amp; Setup</a><ul><li><a href="#prerequisites" class="table-of-contents__link toc-highlight">Prerequisites</a></li><li><a href="#local-development-setup" class="table-of-contents__link toc-highlight">Local Development Setup</a></li><li><a href="#production-build" class="table-of-contents__link toc-highlight">Production Build</a></li><li><a href="#deployment" class="table-of-contents__link toc-highlight">Deployment</a></li></ul></li><li><a href="#configuration" class="table-of-contents__link toc-highlight">Configuration</a><ul><li><a href="#github-token-setup" class="table-of-contents__link toc-highlight">GitHub Token Setup</a></li><li><a href="#repository-configuration" class="table-of-contents__link toc-highlight">Repository Configuration</a></li></ul></li><li><a href="#user-guide" class="table-of-contents__link toc-highlight">User Guide</a><ul><li><a href="#getting-started" class="table-of-contents__link toc-highlight">Getting Started</a></li><li><a href="#file-editing-workflow" class="table-of-contents__link toc-highlight">File Editing Workflow</a></li><li><a href="#external-specifications-management" class="table-of-contents__link toc-highlight">External Specifications Management</a></li><li><a href="#health-check-system" class="table-of-contents__link toc-highlight">Health Check System</a></li></ul></li><li><a href="#components-documentation" class="table-of-contents__link toc-highlight">Components Documentation</a><ul><li><a href="#mainnavvue" class="table-of-contents__link toc-highlight">MainNav.vue</a></li><li><a href="#loginpagevue" class="table-of-contents__link toc-highlight">LoginPage.vue</a></li><li><a href="#homepagevue" class="table-of-contents__link toc-highlight">HomePage.vue</a></li><li><a href="#fileexplorervue" class="table-of-contents__link toc-highlight">FileExplorer.vue</a></li><li><a href="#fileeditorvue" class="table-of-contents__link toc-highlight">FileEditor.vue</a></li><li><a href="#externalspecsmanagervue" class="table-of-contents__link toc-highlight">ExternalSpecsManager.vue</a></li><li><a href="#healthcheckvue" class="table-of-contents__link toc-highlight">HealthCheck.vue</a></li></ul></li><li><a href="#api-integration" class="table-of-contents__link toc-highlight">API Integration</a><ul><li><a href="#github-api-usage" class="table-of-contents__link toc-highlight">GitHub API Usage</a></li><li><a href="#error-handling" class="table-of-contents__link toc-highlight">Error Handling</a></li><li><a href="#caching-strategy" class="table-of-contents__link toc-highlight">Caching Strategy</a></li></ul></li><li><a href="#health-check-implementation" class="table-of-contents__link toc-highlight">Health Check Implementation</a><ul><li><a href="#implementation-details" class="table-of-contents__link toc-highlight">Implementation Details</a></li></ul></li><li><a href="#security-considerations" class="table-of-contents__link toc-highlight">Security Considerations</a><ul><li><a href="#authentication-security" class="table-of-contents__link toc-highlight">Authentication Security</a></li><li><a href="#data-protection" class="table-of-contents__link toc-highlight">Data Protection</a></li><li><a href="#best-practices" class="table-of-contents__link toc-highlight">Best Practices</a></li></ul></li><li><a href="#development-guidelines" class="table-of-contents__link toc-highlight">Development Guidelines</a><ul><li><a href="#code-quality-standards" class="table-of-contents__link toc-highlight">Code Quality Standards</a></li><li><a href="#component-development-guidelines" class="table-of-contents__link toc-highlight">Component Development Guidelines</a></li><li><a href="#file-organization" class="table-of-contents__link toc-highlight">File Organization</a></li><li><a href="#testing-strategy" class="table-of-contents__link toc-highlight">Testing Strategy</a></li><li><a href="#performance-optimization" class="table-of-contents__link toc-highlight">Performance Optimization</a></li></ul></li><li><a href="#troubleshooting" class="table-of-contents__link toc-highlight">Troubleshooting</a><ul><li><a href="#common-issues" class="table-of-contents__link toc-highlight">Common Issues</a></li><li><a href="#error-codes" class="table-of-contents__link toc-highlight">Error Codes</a></li><li><a href="#debug-information" class="table-of-contents__link toc-highlight">Debug Information</a></li></ul></li><li><a href="#contributing" class="table-of-contents__link toc-highlight">Contributing</a><ul><li><a href="#development-setup" class="table-of-contents__link toc-highlight">Development Setup</a></li><li><a href="#contribution-guidelines" class="table-of-contents__link toc-highlight">Contribution Guidelines</a></li><li><a href="#feature-requests" class="table-of-contents__link toc-highlight">Feature Requests</a></li><li><a href="#bug-reports" class="table-of-contents__link toc-highlight">Bug Reports</a></li></ul></li><li><a href="#files-created-and-their-purpose" class="table-of-contents__link toc-highlight">Files Created and Their Purpose</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/blockchainbird/spec-up-t-website" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div></div></footer></div>
+</body>
+</html>

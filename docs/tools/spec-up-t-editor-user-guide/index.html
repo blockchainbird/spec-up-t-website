@@ -1,0 +1,735 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-tools/spec-up-t-editor-user-guide" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.8.1">
+<title data-rh="true">Spec-Up-T Editor - User Guide | Spec-Up-T</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://blockchainbird.github.io/spec-up-t-website/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://blockchainbird.github.io/spec-up-t-website/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://blockchainbird.github.io/spec-up-t-website/docs/tools/spec-up-t-editor-user-guide"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Spec-Up-T Editor - User Guide | Spec-Up-T"><meta data-rh="true" name="description" content="Table of Contents"><meta data-rh="true" property="og:description" content="Table of Contents"><link data-rh="true" rel="icon" href="/spec-up-t-website/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://blockchainbird.github.io/spec-up-t-website/docs/tools/spec-up-t-editor-user-guide"><link data-rh="true" rel="alternate" href="https://blockchainbird.github.io/spec-up-t-website/docs/tools/spec-up-t-editor-user-guide" hreflang="en"><link data-rh="true" rel="alternate" href="https://blockchainbird.github.io/spec-up-t-website/docs/tools/spec-up-t-editor-user-guide" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"🛠️ Tools","item":"https://blockchainbird.github.io/spec-up-t-website/docs/category/️-tools"},{"@type":"ListItem","position":2,"name":"Spec-Up-T Editor - User Guide","item":"https://blockchainbird.github.io/spec-up-t-website/docs/tools/spec-up-t-editor-user-guide"}]}</script><link rel="stylesheet" href="/spec-up-t-website/assets/css/styles.b158cdde.css">
+<script src="/spec-up-t-website/assets/js/runtime~main.58e8fbe4.js" defer="defer"></script>
+<script src="/spec-up-t-website/assets/js/main.0fb7a016.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t="light";var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",e||t),document.documentElement.setAttribute("data-theme-choice",e||t)}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/spec-up-t-website/"><div class="navbar__logo"><img src="/spec-up-t-website/img/logo.svg" alt="Spec-Up-T Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/spec-up-t-website/img/logo.svg" alt="Spec-Up-T Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Home</b></a><a class="navbar__item navbar__link" href="/spec-up-t-website/docs/introduction/overview/">Enter Documentation</a><a class="navbar__item navbar__link" href="/spec-up-t-website/docs/spec-up-t-demo-site">Demo</a><a class="navbar__item navbar__link" href="/spec-up-t-website/docs/getting-started/github-token">GitHub token</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/blockchainbird/spec-up-t-website" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"><div class="navbar__search searchBarContainer_NW3z" dir="ltr"><input placeholder="Search" aria-label="Search" class="navbar__search-input" value=""><div class="loadingRing_RJI3 searchBarLoadingRing_YnHq"><div></div><div></div><div></div><div></div></div></div></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/spec-up-t-website/docs/category/-introduction">📖 Introduction</a><button aria-label="Expand sidebar category &#x27;📖 Introduction&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/spec-up-t-website/docs/category/-getting-started">🚀 Getting Started</a><button aria-label="Expand sidebar category &#x27;🚀 Getting Started&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/spec-up-t-website/docs/category/️-user-interface-overview">🖥️ User Interface Overview</a><button aria-label="Expand sidebar category &#x27;🖥️ User Interface Overview&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/spec-up-t-website/docs/category/-role-based-guides">👥 Role-Based Guides</a><button aria-label="Expand sidebar category &#x27;👥 Role-Based Guides&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/spec-up-t-website/docs/category/-advanced-features">⚡ Advanced Features</a><button aria-label="Expand sidebar category &#x27;⚡ Advanced Features&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/spec-up-t-website/docs/category/-maintenance-tasks">🔧 Maintenance Tasks</a><button aria-label="Expand sidebar category &#x27;🔧 Maintenance Tasks&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/spec-up-t-website/docs/faq">❓ FAQ</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/spec-up-t-website/docs/troubleshooting">🚑 Troubleshooting</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/spec-up-t-website/docs/glossary">📖 Glossary</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/spec-up-t-website/docs/spec-up-t-demo-site">🎯 Spec-Up-T demo</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/spec-up-t-website/docs/category/-developer-documentation">💻 Developer Documentation</a><button aria-label="Expand sidebar category &#x27;💻 Developer Documentation&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" href="/spec-up-t-website/docs/category/️-tools">🛠️ Tools</a><button aria-label="Collapse sidebar category &#x27;🛠️ Tools&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/spec-up-t-website/docs/tools/health-check">Health Check</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/spec-up-t-website/docs/tools/migrate">Spec-Up Migrater</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/spec-up-t-website/docs/tools/specalyzer">Specalyzer</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/spec-up-t-website/docs/tools/general-tools">General tools</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/spec-up-t-website/docs/tools/compare-spec-up-t-repos">Compare Spec-Up-T Repositories</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/spec-up-t-website/docs/tools/compare-spec-up-t-specs">Compare Spec-Up-T specs.json Files</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/spec-up-t-website/docs/tools/spec-up-t-editor-user-guide">Spec-Up-T Editor - User Guide</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/spec-up-t-website/docs/tools/splitter">Term File Splitter</a></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/spec-up-t-website/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/spec-up-t-website/docs/category/️-tools"><span>🛠️ Tools</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Spec-Up-T Editor - User Guide</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Spec-Up-T Editor - User Guide</h1></header>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="table-of-contents">Table of Contents<a href="#table-of-contents" class="hash-link" aria-label="Direct link to Table of Contents" title="Direct link to Table of Contents">​</a></h2>
+<ol>
+<li><a href="#getting-started">Getting Started</a></li>
+<li><a href="#initial-setup">Initial Setup</a></li>
+<li><a href="#navigating-the-interface">Navigating the Interface</a></li>
+<li><a href="#working-with-repositories">Working with Repositories</a></li>
+<li><a href="#file-management">File Management</a></li>
+<li><a href="#editing-files">Editing Files</a></li>
+<li><a href="#external-specifications">External Specifications</a></li>
+<li><a href="#health-monitoring">Health Monitoring</a></li>
+<li><a href="#tips-and-best-practices">Tips and Best Practices</a></li>
+<li><a href="#common-workflows">Common Workflows</a></li>
+<li><a href="#troubleshooting">Troubleshooting</a></li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="getting-started">Getting Started<a href="#getting-started" class="hash-link" aria-label="Direct link to Getting Started" title="Direct link to Getting Started">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="what-is-the-spec-up-t-editor">What is the Spec-Up-T Editor?<a href="#what-is-the-spec-up-t-editor" class="hash-link" aria-label="Direct link to What is the Spec-Up-T Editor?" title="Direct link to What is the Spec-Up-T Editor?">​</a></h3>
+<p>The Spec-Up-T Editor is a web-based tool that allows you to edit and manage specification documents stored in GitHub repositories. Think of it as a specialized text editor that connects directly to GitHub, making it easy to collaborate on documentation and specifications without needing to install any software on your computer.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="who-should-use-this-guide">Who Should Use This Guide?<a href="#who-should-use-this-guide" class="hash-link" aria-label="Direct link to Who Should Use This Guide?" title="Direct link to Who Should Use This Guide?">​</a></h3>
+<p>This guide is for:</p>
+<ul>
+<li><strong>Specification writers</strong> who need to create and edit documentation</li>
+<li><strong>Project managers</strong> overseeing specification development</li>
+<li><strong>Team members</strong> collaborating on documentation projects</li>
+<li><strong>Anyone</strong> who needs to work with GitHub-hosted specification files</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="what-youll-need">What You&#x27;ll Need<a href="#what-youll-need" class="hash-link" aria-label="Direct link to What You&#x27;ll Need" title="Direct link to What You&#x27;ll Need">​</a></h3>
+<p>Before you start, make sure you have:</p>
+<ul>
+<li>A web browser (Chrome, Firefox, Safari, or Edge)</li>
+<li>A GitHub account</li>
+<li>Access to the repositories you want to edit</li>
+<li>A GitHub Personal Access Token (we&#x27;ll help you create this)</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="initial-setup">Initial Setup<a href="#initial-setup" class="hash-link" aria-label="Direct link to Initial Setup" title="Direct link to Initial Setup">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="step-1-creating-a-github-personal-access-token">Step 1: Creating a GitHub Personal Access Token<a href="#step-1-creating-a-github-personal-access-token" class="hash-link" aria-label="Direct link to Step 1: Creating a GitHub Personal Access Token" title="Direct link to Step 1: Creating a GitHub Personal Access Token">​</a></h3>
+<p>A Personal Access Token is like a password that allows the Spec-Up-T Editor to access your GitHub repositories securely.</p>
+<ol>
+<li>
+<p><strong>Go to GitHub Settings</strong></p>
+<ul>
+<li>Log into GitHub</li>
+<li>Click your profile picture in the top right</li>
+<li>Select &quot;Settings&quot; from the dropdown menu</li>
+</ul>
+</li>
+<li>
+<p><strong>Navigate to Developer Settings</strong></p>
+<ul>
+<li>Scroll down in the left sidebar</li>
+<li>Click &quot;Developer settings&quot;</li>
+</ul>
+</li>
+<li>
+<p><strong>Create a Personal Access Token</strong></p>
+<ul>
+<li>Click &quot;Personal access tokens&quot; → &quot;Tokens (classic)&quot;</li>
+<li>Click &quot;Generate new token&quot; → &quot;Generate new token (classic)&quot;</li>
+</ul>
+</li>
+<li>
+<p><strong>Configure the Token</strong></p>
+<ul>
+<li><strong>Note</strong>: Enter a description like &quot;Spec-Up-T Editor&quot;</li>
+<li><strong>Expiration</strong>: Choose your preferred expiration (90 days recommended)</li>
+<li><strong>Scopes</strong>: Check these boxes:<!-- -->
+<ul>
+<li>✅ <code>repo</code> (Full control of private repositories)</li>
+<li>✅ <code>read:user</code> (Read user profile data)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Generate and Save</strong></p>
+<ul>
+<li>Click &quot;Generate token&quot;</li>
+<li><strong>Important</strong>: Copy the token immediately and save it somewhere safe</li>
+<li>You won&#x27;t be able to see it again!</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="step-2-first-login">Step 2: First Login<a href="#step-2-first-login" class="hash-link" aria-label="Direct link to Step 2: First Login" title="Direct link to Step 2: First Login">​</a></h3>
+<ol>
+<li>
+<p><strong>Open the Spec-Up-T Editor</strong></p>
+<ul>
+<li>Navigate to the editor URL in your web browser</li>
+</ul>
+</li>
+<li>
+<p><strong>Enter Your Token</strong></p>
+<ul>
+<li>Paste your GitHub Personal Access Token in the login field</li>
+<li>Click &quot;Login with GitHub&quot;</li>
+</ul>
+</li>
+<li>
+<p><strong>Success!</strong></p>
+<ul>
+<li>You should see the main dashboard</li>
+<li>Your GitHub username will appear in the top navigation</li>
+</ul>
+</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="navigating-the-interface">Navigating the Interface<a href="#navigating-the-interface" class="hash-link" aria-label="Direct link to Navigating the Interface" title="Direct link to Navigating the Interface">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="main-navigation-bar">Main Navigation Bar<a href="#main-navigation-bar" class="hash-link" aria-label="Direct link to Main Navigation Bar" title="Direct link to Main Navigation Bar">​</a></h3>
+<p>The top navigation bar contains several key buttons:</p>
+<ul>
+<li><strong>🏠 Home</strong>: Returns you to the main dashboard</li>
+<li><strong>ℹ️ About</strong>: Shows information about the editor and build details</li>
+<li><strong>📖 Documentation</strong>: Links to the full documentation website</li>
+<li><strong>🔗 External Specs</strong>: Manages external specification references (when in a repository)</li>
+<li><strong>👁️ View on GitHub</strong>: Opens the current repository in GitHub (when in a repository)</li>
+<li><strong>💗 Health Check</strong>: Runs repository health diagnostics (when in a repository)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="main-dashboard">Main Dashboard<a href="#main-dashboard" class="hash-link" aria-label="Direct link to Main Dashboard" title="Direct link to Main Dashboard">​</a></h3>
+<p>The dashboard is your starting point for accessing repositories:</p>
+<ul>
+<li><strong>Repository Access Form</strong>: Enter GitHub username/organization and repository name</li>
+<li><strong>Branch Selection</strong>: Choose which branch to work with</li>
+<li><strong>Recently Visited</strong>: Quick access to repositories you&#x27;ve worked with recently</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="working-with-repositories">Working with Repositories<a href="#working-with-repositories" class="hash-link" aria-label="Direct link to Working with Repositories" title="Direct link to Working with Repositories">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="accessing-a-repository">Accessing a Repository<a href="#accessing-a-repository" class="hash-link" aria-label="Direct link to Accessing a Repository" title="Direct link to Accessing a Repository">​</a></h3>
+<ol>
+<li>
+<p><strong>Enter Repository Information</strong></p>
+<ul>
+<li><strong>GitHub Username/Organization</strong>: The owner of the repository (e.g., &quot;microsoft&quot;, &quot;mycompany&quot;)</li>
+<li><strong>Repository Name</strong>: The name of the repository (e.g., &quot;docs&quot;, &quot;specifications&quot;)</li>
+<li><strong>Branch</strong>: Usually &quot;main&quot; or &quot;master&quot;, but could be any branch name</li>
+</ul>
+</li>
+<li>
+<p><strong>Repository Suggestions</strong></p>
+<ul>
+<li>When you start typing in the repository field, you&#x27;ll see suggestions</li>
+<li>These are repositories you have access to</li>
+<li>Click on any suggestion to auto-fill the field</li>
+</ul>
+</li>
+<li>
+<p><strong>Branch Selection</strong></p>
+<ul>
+<li>Click in the branch field to see available branches</li>
+<li>You can filter branches by typing</li>
+<li>Select the branch you want to work with</li>
+</ul>
+</li>
+<li>
+<p><strong>Access the Repository</strong></p>
+<ul>
+<li>Click &quot;Access Repository&quot;</li>
+<li>If successful, you&#x27;ll be taken to the file explorer</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="repository-structure">Repository Structure<a href="#repository-structure" class="hash-link" aria-label="Direct link to Repository Structure" title="Direct link to Repository Structure">​</a></h3>
+<p>The editor looks for a <code>specs.json</code> file in your repository root to understand how your project is organized. This file tells the editor:</p>
+<ul>
+<li>Where your specification files are located</li>
+<li>What external specifications you reference</li>
+<li>How your documentation is structured</li>
+</ul>
+<p>If no <code>specs.json</code> file exists, the editor defaults to looking in a <code>specs</code> folder.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="file-management">File Management<a href="#file-management" class="hash-link" aria-label="Direct link to File Management" title="Direct link to File Management">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="file-explorer-interface">File Explorer Interface<a href="#file-explorer-interface" class="hash-link" aria-label="Direct link to File Explorer Interface" title="Direct link to File Explorer Interface">​</a></h3>
+<p>Once you access a repository, you&#x27;ll see the file explorer with:</p>
+<ul>
+<li><strong>Current Directory Path</strong>: Shows where you are in the repository</li>
+<li><strong>File Filters</strong>: Buttons to filter by file type (All, Markdown, Images, JSON, Text)</li>
+<li><strong>Search Box</strong>: Type to filter files by name</li>
+<li><strong>Create File Button</strong>: Plus (+) icon to create new files</li>
+<li><strong>File List</strong>: All files and folders in the current directory</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="navigating-folders">Navigating Folders<a href="#navigating-folders" class="hash-link" aria-label="Direct link to Navigating Folders" title="Direct link to Navigating Folders">​</a></h3>
+<ul>
+<li><strong>Enter Folders</strong>: Click on any folder name to enter it</li>
+<li><strong>Go Up</strong>: Use the &quot;← Go Up&quot; button to move up one directory level</li>
+<li><strong>Breadcrumb Navigation</strong>: The path at the top shows your current location</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="file-filtering">File Filtering<a href="#file-filtering" class="hash-link" aria-label="Direct link to File Filtering" title="Direct link to File Filtering">​</a></h3>
+<p>Use the filter buttons to show only specific types of files:</p>
+<ul>
+<li><strong>All</strong>: Shows all files and folders</li>
+<li><strong>Markdown</strong>: Only .md files (most specifications)</li>
+<li><strong>Images</strong>: .png, .jpg, .gif, .svg files</li>
+<li><strong>JSON</strong>: .json configuration files</li>
+<li><strong>Text</strong>: .txt files</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="creating-new-files">Creating New Files<a href="#creating-new-files" class="hash-link" aria-label="Direct link to Creating New Files" title="Direct link to Creating New Files">​</a></h3>
+<ol>
+<li>
+<p><strong>Click the Plus (+) Button</strong></p>
+<ul>
+<li>Located in the top right of the file list</li>
+</ul>
+</li>
+<li>
+<p><strong>Enter File Details</strong></p>
+<ul>
+<li><strong>File Name</strong>: Include the extension (e.g., &quot;new-spec.md&quot;)</li>
+<li><strong>Initial Content</strong>: Optionally add some starting content</li>
+<li><strong>Commit Message</strong>: Describe what you&#x27;re creating</li>
+</ul>
+</li>
+<li>
+<p><strong>Create the File</strong></p>
+<ul>
+<li>Click &quot;Create File&quot;</li>
+<li>The file will be created and highlighted in the list</li>
+<li>You can immediately click on it to start editing</li>
+</ul>
+</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="editing-files">Editing Files<a href="#editing-files" class="hash-link" aria-label="Direct link to Editing Files" title="Direct link to Editing Files">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="opening-a-file">Opening a File<a href="#opening-a-file" class="hash-link" aria-label="Direct link to Opening a File" title="Direct link to Opening a File">​</a></h3>
+<ul>
+<li>Simply click on any file name in the file explorer</li>
+<li>The file will open in the editor interface</li>
+<li>You&#x27;ll see the file content and editing tools</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="editor-interface">Editor Interface<a href="#editor-interface" class="hash-link" aria-label="Direct link to Editor Interface" title="Direct link to Editor Interface">​</a></h3>
+<p>The editor has two main modes:</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="edit-mode">Edit Mode<a href="#edit-mode" class="hash-link" aria-label="Direct link to Edit Mode" title="Direct link to Edit Mode">​</a></h4>
+<ul>
+<li><strong>Toolbar</strong>: Formatting buttons for common actions</li>
+<li><strong>Text Area</strong>: Where you type and edit content</li>
+<li><strong>Live Formatting</strong>: Basic markdown formatting is applied as you type</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="preview-mode">Preview Mode<a href="#preview-mode" class="hash-link" aria-label="Direct link to Preview Mode" title="Direct link to Preview Mode">​</a></h4>
+<ul>
+<li><strong>Rendered View</strong>: See how your markdown will look when published</li>
+<li><strong>Toggle Button</strong>: Switch between Edit and Preview modes</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="editor-toolbar">Editor Toolbar<a href="#editor-toolbar" class="hash-link" aria-label="Direct link to Editor Toolbar" title="Direct link to Editor Toolbar">​</a></h3>
+<p>The toolbar provides quick access to common formatting options:</p>
+<ul>
+<li><strong>Bold (B)</strong>: Make selected text bold</li>
+<li><strong>Italic (I)</strong>: Make selected text italic</li>
+<li><strong>Headers (H1-H6)</strong>: Create headings of different sizes</li>
+<li><strong>Ordered List</strong>: Create numbered lists</li>
+<li><strong>Unordered List</strong>: Create bullet point lists</li>
+<li><strong>Link</strong>: Insert hyperlinks</li>
+<li><strong>Code</strong>: Format text as code</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="saving-your-changes">Saving Your Changes<a href="#saving-your-changes" class="hash-link" aria-label="Direct link to Saving Your Changes" title="Direct link to Saving Your Changes">​</a></h3>
+<ol>
+<li>
+<p><strong>Add a Commit Message</strong></p>
+<ul>
+<li>In the commit message box, describe your changes</li>
+<li>Be specific: &quot;Add section on security requirements&quot; is better than &quot;Update file&quot;</li>
+</ul>
+</li>
+<li>
+<p><strong>Save to GitHub</strong></p>
+<ul>
+<li>Click the &quot;💾 Save to GitHub&quot; button</li>
+<li>Your changes will be committed directly to the repository</li>
+<li>You&#x27;ll see a success message when complete</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="working-with-terms-and-definitions">Working with Terms and Definitions<a href="#working-with-terms-and-definitions" class="hash-link" aria-label="Direct link to Working with Terms and Definitions" title="Direct link to Working with Terms and Definitions">​</a></h3>
+<p>The editor has special support for managing terminology:</p>
+<ol>
+<li>
+<p><strong>Terms Panel</strong></p>
+<ul>
+<li>Located on the right side of the editor</li>
+<li>Shows terms from your current repository and external specifications</li>
+</ul>
+</li>
+<li>
+<p><strong>Adding Terms</strong></p>
+<ul>
+<li>Click &quot;Add Term&quot; in the terms panel</li>
+<li>Enter the term name and any aliases</li>
+<li>The term will be available for reference</li>
+</ul>
+</li>
+<li>
+<p><strong>Using Terms</strong></p>
+<ul>
+<li>Type <code>[[term-name]]</code> in your content to reference a term</li>
+<li>The editor will help you find and link to defined terms</li>
+</ul>
+</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="external-specifications">External Specifications<a href="#external-specifications" class="hash-link" aria-label="Direct link to External Specifications" title="Direct link to External Specifications">​</a></h2>
+<p>External specifications allow you to reference terminology and content from other repositories.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="accessing-external-specs-manager">Accessing External Specs Manager<a href="#accessing-external-specs-manager" class="hash-link" aria-label="Direct link to Accessing External Specs Manager" title="Direct link to Accessing External Specs Manager">​</a></h3>
+<ol>
+<li>
+<p><strong>Navigate to a Repository</strong></p>
+<ul>
+<li>You must be working within a repository first</li>
+</ul>
+</li>
+<li>
+<p><strong>Click &quot;External Specs&quot;</strong></p>
+<ul>
+<li>Located in the top navigation bar</li>
+<li>This opens the External Specifications Manager</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="adding-external-specifications">Adding External Specifications<a href="#adding-external-specifications" class="hash-link" aria-label="Direct link to Adding External Specifications" title="Direct link to Adding External Specifications">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="single-specification-method">Single Specification Method<a href="#single-specification-method" class="hash-link" aria-label="Direct link to Single Specification Method" title="Direct link to Single Specification Method">​</a></h4>
+<ol>
+<li>
+<p><strong>Choose &quot;Single&quot; Mode</strong></p>
+<ul>
+<li>Click the &quot;Single&quot; tab</li>
+</ul>
+</li>
+<li>
+<p><strong>Fill in the Details</strong></p>
+<ul>
+<li><strong>Specification ID</strong>: A unique name (e.g., &quot;keri-spec&quot;, &quot;toip-glossary&quot;)</li>
+<li><strong>GitHub Page URL</strong>: Where the spec is published (e.g., <code>https://example.github.io/spec/</code>)</li>
+<li><strong>Repository URL</strong>: The source GitHub repository</li>
+<li><strong>Terms Directory</strong>: Path to terms/definitions (e.g., &quot;spec/terms-definitions&quot;)</li>
+</ul>
+</li>
+<li>
+<p><strong>Add the Specification</strong></p>
+<ul>
+<li>Click &quot;Add Specification&quot;</li>
+<li>The spec will appear in your list</li>
+</ul>
+</li>
+</ol>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="bulk-import-method">Bulk Import Method<a href="#bulk-import-method" class="hash-link" aria-label="Direct link to Bulk Import Method" title="Direct link to Bulk Import Method">​</a></h4>
+<ol>
+<li>
+<p><strong>Choose &quot;Bulk&quot; Mode</strong></p>
+<ul>
+<li>Click the &quot;Bulk&quot; tab</li>
+</ul>
+</li>
+<li>
+<p><strong>JSON Input</strong></p>
+<ul>
+<li>Select the &quot;JSON Input&quot; sub-tab</li>
+<li>Paste a JSON array of external specifications</li>
+<li>Click &quot;Import from JSON&quot;</li>
+</ul>
+</li>
+<li>
+<p><strong>GitHub URL Import</strong></p>
+<ul>
+<li>Select the &quot;GitHub URL&quot; sub-tab</li>
+<li>Enter a URL to a JSON file containing external specs</li>
+<li>Click &quot;Import from URL&quot;</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="managing-external-specifications">Managing External Specifications<a href="#managing-external-specifications" class="hash-link" aria-label="Direct link to Managing External Specifications" title="Direct link to Managing External Specifications">​</a></h3>
+<ul>
+<li><strong>Edit</strong>: Click on any field in the table to edit it</li>
+<li><strong>Delete</strong>: Use the delete button (🗑️) to remove a specification</li>
+<li><strong>Validation</strong>: The system checks that URLs are valid and accessible</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="saving-external-specs-changes">Saving External Specs Changes<a href="#saving-external-specs-changes" class="hash-link" aria-label="Direct link to Saving External Specs Changes" title="Direct link to Saving External Specs Changes">​</a></h3>
+<ol>
+<li>
+<p><strong>Make Your Changes</strong></p>
+<ul>
+<li>Add, edit, or remove external specifications as needed</li>
+</ul>
+</li>
+<li>
+<p><strong>Save Changes</strong></p>
+<ul>
+<li>Click &quot;💾 Save Changes&quot; in the top right</li>
+<li>Enter a commit message describing your changes</li>
+<li>Your specs.json file will be updated in the repository</li>
+</ul>
+</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="health-monitoring">Health Monitoring<a href="#health-monitoring" class="hash-link" aria-label="Direct link to Health Monitoring" title="Direct link to Health Monitoring">​</a></h2>
+<p>The Health Check feature helps you identify and fix problems with your repository configuration.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="running-a-health-check">Running a Health Check<a href="#running-a-health-check" class="hash-link" aria-label="Direct link to Running a Health Check" title="Direct link to Running a Health Check">​</a></h3>
+<ol>
+<li>
+<p><strong>Navigate to a Repository</strong></p>
+<ul>
+<li>You must be working within a repository</li>
+</ul>
+</li>
+<li>
+<p><strong>Click &quot;Health Check&quot;</strong></p>
+<ul>
+<li>Located in the top navigation bar</li>
+<li>The health check will run automatically</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="understanding-health-check-results">Understanding Health Check Results<a href="#understanding-health-check-results" class="hash-link" aria-label="Direct link to Understanding Health Check Results" title="Direct link to Understanding Health Check Results">​</a></h3>
+<p>Results are organized into categories, each with a color-coded status:</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="status-types">Status Types<a href="#status-types" class="hash-link" aria-label="Direct link to Status Types" title="Direct link to Status Types">​</a></h4>
+<ul>
+<li><strong>✅ Green</strong>: Everything is working correctly</li>
+<li><strong>⚠️ Yellow</strong>: Warnings that should be addressed but don&#x27;t prevent functionality</li>
+<li><strong>❌ Red</strong>: Errors that need immediate attention</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="check-categories">Check Categories<a href="#check-categories" class="hash-link" aria-label="Direct link to Check Categories" title="Direct link to Check Categories">​</a></h4>
+<ol>
+<li>
+<p><strong>Repository Information</strong></p>
+<ul>
+<li>Verifies you can access the repository</li>
+<li>Confirms the selected branch exists</li>
+<li>Checks basic repository settings</li>
+</ul>
+</li>
+<li>
+<p><strong>Specs Configuration</strong></p>
+<ul>
+<li>Validates your specs.json file structure</li>
+<li>Checks that specified directories exist</li>
+<li>Verifies configuration syntax</li>
+</ul>
+</li>
+<li>
+<p><strong>External Specifications</strong></p>
+<ul>
+<li>Tests that external URLs are accessible</li>
+<li>Validates GitHub repository links</li>
+<li>Checks that terms directories exist in external repos</li>
+</ul>
+</li>
+<li>
+<p><strong>File Structure</strong></p>
+<ul>
+<li>Analyzes your repository organization</li>
+<li>Checks for required files</li>
+<li>Validates file naming conventions</li>
+</ul>
+</li>
+<li>
+<p><strong>Git Configuration</strong></p>
+<ul>
+<li>Reviews your .gitignore file</li>
+<li>Checks repository settings</li>
+<li>Validates branch configuration</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="acting-on-health-check-results">Acting on Health Check Results<a href="#acting-on-health-check-results" class="hash-link" aria-label="Direct link to Acting on Health Check Results" title="Direct link to Acting on Health Check Results">​</a></h3>
+<ol>
+<li>
+<p><strong>Prioritize Errors First</strong></p>
+<ul>
+<li>Red errors should be fixed before continuing work</li>
+<li>These often prevent core functionality</li>
+</ul>
+</li>
+<li>
+<p><strong>Address Warnings</strong></p>
+<ul>
+<li>Yellow warnings won&#x27;t break functionality but should be addressed</li>
+<li>They often indicate best practices or potential future issues</li>
+</ul>
+</li>
+<li>
+<p><strong>Use the Recommendations</strong></p>
+<ul>
+<li>Each issue includes specific guidance on how to fix it</li>
+<li>Follow the provided steps to resolve problems</li>
+</ul>
+</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="tips-and-best-practices">Tips and Best Practices<a href="#tips-and-best-practices" class="hash-link" aria-label="Direct link to Tips and Best Practices" title="Direct link to Tips and Best Practices">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="file-organization">File Organization<a href="#file-organization" class="hash-link" aria-label="Direct link to File Organization" title="Direct link to File Organization">​</a></h3>
+<ol>
+<li>
+<p><strong>Use Clear File Names</strong></p>
+<ul>
+<li><code>user-authentication-spec.md</code> is better than <code>spec1.md</code></li>
+<li>Include version numbers when appropriate: <code>api-v2-specification.md</code></li>
+</ul>
+</li>
+<li>
+<p><strong>Organize with Folders</strong></p>
+<ul>
+<li>Group related specifications in folders</li>
+<li>Use consistent naming conventions</li>
+</ul>
+</li>
+<li>
+<p><strong>Keep Related Files Together</strong></p>
+<ul>
+<li>Store images and diagrams near the specifications that use them</li>
+<li>Consider a <code>media</code> or <code>images</code> subfolder for each specification</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="writing-effective-specifications">Writing Effective Specifications<a href="#writing-effective-specifications" class="hash-link" aria-label="Direct link to Writing Effective Specifications" title="Direct link to Writing Effective Specifications">​</a></h3>
+<ol>
+<li>
+<p><strong>Use Descriptive Commit Messages</strong></p>
+<ul>
+<li>&quot;Add authentication requirements section&quot; is better than &quot;Update file&quot;</li>
+<li>Include context: &quot;Fix typo in section 3.2&quot; vs &quot;Fix typo&quot;</li>
+</ul>
+</li>
+<li>
+<p><strong>Make Incremental Changes</strong></p>
+<ul>
+<li>Save your work frequently</li>
+<li>Don&#x27;t make massive changes in a single commit</li>
+</ul>
+</li>
+<li>
+<p><strong>Use the Preview Mode</strong></p>
+<ul>
+<li>Always preview your markdown before saving</li>
+<li>Check that links work and formatting is correct</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="working-with-teams">Working with Teams<a href="#working-with-teams" class="hash-link" aria-label="Direct link to Working with Teams" title="Direct link to Working with Teams">​</a></h3>
+<ol>
+<li>
+<p><strong>Coordinate Branch Usage</strong></p>
+<ul>
+<li>Agree on which branch team members should use</li>
+<li>Consider using feature branches for major changes</li>
+</ul>
+</li>
+<li>
+<p><strong>Communicate Changes</strong></p>
+<ul>
+<li>Use descriptive commit messages that others can understand</li>
+<li>Consider discussing major changes before making them</li>
+</ul>
+</li>
+<li>
+<p><strong>Regular Health Checks</strong></p>
+<ul>
+<li>Run health checks periodically to catch issues early</li>
+<li>Address warnings before they become errors</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="security-best-practices">Security Best Practices<a href="#security-best-practices" class="hash-link" aria-label="Direct link to Security Best Practices" title="Direct link to Security Best Practices">​</a></h3>
+<ol>
+<li>
+<p><strong>Protect Your Token</strong></p>
+<ul>
+<li>Never share your Personal Access Token</li>
+<li>Use tokens with minimal necessary permissions</li>
+<li>Rotate tokens regularly (every 90 days recommended)</li>
+</ul>
+</li>
+<li>
+<p><strong>Review Changes</strong></p>
+<ul>
+<li>Always review your changes in preview mode</li>
+<li>Double-check that you&#x27;re editing the correct file and branch</li>
+</ul>
+</li>
+<li>
+<p><strong>Backup Important Work</strong></p>
+<ul>
+<li>Consider keeping local copies of important specifications</li>
+<li>Use GitHub&#x27;s built-in version history as a backup</li>
+</ul>
+</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="common-workflows">Common Workflows<a href="#common-workflows" class="hash-link" aria-label="Direct link to Common Workflows" title="Direct link to Common Workflows">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="workflow-1-creating-a-new-specification">Workflow 1: Creating a New Specification<a href="#workflow-1-creating-a-new-specification" class="hash-link" aria-label="Direct link to Workflow 1: Creating a New Specification" title="Direct link to Workflow 1: Creating a New Specification">​</a></h3>
+<ol>
+<li><strong>Access your repository</strong> using the dashboard</li>
+<li><strong>Navigate to the appropriate folder</strong> for specifications</li>
+<li><strong>Create a new file</strong> with a descriptive name ending in <code>.md</code></li>
+<li><strong>Add initial content</strong> using the editor toolbar for formatting</li>
+<li><strong>Save with a clear commit message</strong> like &quot;Create initial draft of user authentication spec&quot;</li>
+<li><strong>Run a health check</strong> to ensure everything is properly configured</li>
+<li><strong>Share the file location</strong> with team members for review</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="workflow-2-editing-an-existing-specification">Workflow 2: Editing an Existing Specification<a href="#workflow-2-editing-an-existing-specification" class="hash-link" aria-label="Direct link to Workflow 2: Editing an Existing Specification" title="Direct link to Workflow 2: Editing an Existing Specification">​</a></h3>
+<ol>
+<li><strong>Access your repository</strong> and navigate to the file</li>
+<li><strong>Open the file</strong> by clicking on its name</li>
+<li><strong>Make your changes</strong> using the editor tools</li>
+<li><strong>Use preview mode</strong> to check formatting and appearance</li>
+<li><strong>Save with a descriptive commit message</strong> explaining what changed</li>
+<li><strong>Notify team members</strong> of the changes if needed</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="workflow-3-setting-up-external-references">Workflow 3: Setting Up External References<a href="#workflow-3-setting-up-external-references" class="hash-link" aria-label="Direct link to Workflow 3: Setting Up External References" title="Direct link to Workflow 3: Setting Up External References">​</a></h3>
+<ol>
+<li><strong>Access the External Specs Manager</strong> from the navigation</li>
+<li><strong>Gather information</strong> about the external specifications you want to reference:<!-- -->
+<ul>
+<li>GitHub repository URL</li>
+<li>Published documentation URL</li>
+<li>Location of terms/definitions</li>
+</ul>
+</li>
+<li><strong>Add each external specification</strong> using the single or bulk import method</li>
+<li><strong>Test the references</strong> by checking that URLs are accessible</li>
+<li><strong>Save your configuration</strong> with an appropriate commit message</li>
+<li><strong>Run a health check</strong> to verify everything is working correctly</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="workflow-4-collaborative-review-process">Workflow 4: Collaborative Review Process<a href="#workflow-4-collaborative-review-process" class="hash-link" aria-label="Direct link to Workflow 4: Collaborative Review Process" title="Direct link to Workflow 4: Collaborative Review Process">​</a></h3>
+<ol>
+<li><strong>Create or edit specifications</strong> as normal</li>
+<li><strong>Use descriptive commit messages</strong> so reviewers understand changes</li>
+<li><strong>Share the repository and file paths</strong> with reviewers</li>
+<li><strong>Reviewers access the same files</strong> using their own tokens</li>
+<li><strong>Make revisions</strong> based on feedback</li>
+<li><strong>Use the commit history</strong> (available in GitHub) to track changes</li>
+<li><strong>Run final health checks</strong> before considering the specification complete</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="workflow-5-regular-maintenance">Workflow 5: Regular Maintenance<a href="#workflow-5-regular-maintenance" class="hash-link" aria-label="Direct link to Workflow 5: Regular Maintenance" title="Direct link to Workflow 5: Regular Maintenance">​</a></h3>
+<ol>
+<li><strong>Monthly health checks</strong> on all active repositories</li>
+<li><strong>Review and update external specifications</strong> as needed</li>
+<li><strong>Clean up unused files</strong> and outdated content</li>
+<li><strong>Update repository configuration</strong> (specs.json) as your project evolves</li>
+<li><strong>Rotate access tokens</strong> every 90 days for security</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="troubleshooting">Troubleshooting<a href="#troubleshooting" class="hash-link" aria-label="Direct link to Troubleshooting" title="Direct link to Troubleshooting">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="authentication-issues">Authentication Issues<a href="#authentication-issues" class="hash-link" aria-label="Direct link to Authentication Issues" title="Direct link to Authentication Issues">​</a></h3>
+<p><strong>Problem</strong>: &quot;Invalid token&quot; error message</p>
+<p><strong>Solutions</strong>:</p>
+<ol>
+<li>Check that your token hasn&#x27;t expired</li>
+<li>Verify you copied the entire token (they&#x27;re quite long)</li>
+<li>Make sure your token has <code>repo</code> and <code>read:user</code> permissions</li>
+<li>Try generating a new token if the old one doesn&#x27;t work</li>
+</ol>
+<p><strong>Problem</strong>: &quot;Access forbidden&quot; error</p>
+<p><strong>Solutions</strong>:</p>
+<ol>
+<li>Verify you have permission to access the repository</li>
+<li>Check if the repository is private and your token has private repo access</li>
+<li>Confirm you&#x27;re a member of the organization (for organization repositories)</li>
+<li>Ask the repository owner to verify your access permissions</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="file-loading-problems">File Loading Problems<a href="#file-loading-problems" class="hash-link" aria-label="Direct link to File Loading Problems" title="Direct link to File Loading Problems">​</a></h3>
+<p><strong>Problem</strong>: No files showing in the explorer</p>
+<p><strong>Solutions</strong>:</p>
+<ol>
+<li>Check that you entered the correct repository information</li>
+<li>Verify the branch name exists</li>
+<li>Look for a specs.json file in the repository root</li>
+<li>Try using &quot;specs&quot; as the directory if no specs.json exists</li>
+<li>Check your internet connection</li>
+</ol>
+<p><strong>Problem</strong>: Can&#x27;t save files</p>
+<p><strong>Solutions</strong>:</p>
+<ol>
+<li>Verify you have write permissions to the repository</li>
+<li>Check that the branch isn&#x27;t protected</li>
+<li>Make sure you entered a commit message</li>
+<li>Try refreshing the page and logging in again</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="external-specifications-problems">External Specifications Problems<a href="#external-specifications-problems" class="hash-link" aria-label="Direct link to External Specifications Problems" title="Direct link to External Specifications Problems">​</a></h3>
+<p><strong>Problem</strong>: External specs not loading</p>
+<p><strong>Solutions</strong>:</p>
+<ol>
+<li>Verify all URLs are correct and accessible</li>
+<li>Check that the GitHub repositories are public or you have access</li>
+<li>Confirm the terms directory paths are correct</li>
+<li>Test URLs manually in your browser</li>
+</ol>
+<p><strong>Problem</strong>: Terms not appearing from external specs</p>
+<p><strong>Solutions</strong>:</p>
+<ol>
+<li>Run a health check to identify configuration issues</li>
+<li>Verify the external specification URLs are accessible</li>
+<li>Check that the terms directory contains the expected files</li>
+<li>Refresh the page to reload external references</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="performance-issues">Performance Issues<a href="#performance-issues" class="hash-link" aria-label="Direct link to Performance Issues" title="Direct link to Performance Issues">​</a></h3>
+<p><strong>Problem</strong>: Slow loading times</p>
+<p><strong>Solutions</strong>:</p>
+<ol>
+<li>Check your internet connection speed</li>
+<li>Try using a different branch if available</li>
+<li>Clear your browser cache and cookies</li>
+<li>Check if GitHub is experiencing service issues</li>
+<li>Consider the size of your repository (very large repos may be slower)</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="getting-help">Getting Help<a href="#getting-help" class="hash-link" aria-label="Direct link to Getting Help" title="Direct link to Getting Help">​</a></h3>
+<p>If you continue to experience issues:</p>
+<ol>
+<li><strong>Run a Health Check</strong>: This often identifies the root cause of problems</li>
+<li><strong>Check the Browser Console</strong>: Press F12 and look for error messages</li>
+<li><strong>Try a Different Browser</strong>: Sometimes browser-specific issues occur</li>
+<li><strong>Clear Browser Data</strong>: Clear cache, cookies, and local storage for the site</li>
+<li><strong>Contact Support</strong>: Reach out to your system administrator or the development team</li>
+</ol>
+<p>Remember: Most issues are related to authentication, permissions, or repository configuration. The health check system is designed to help identify and resolve the majority of common problems.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="files-created-and-their-purpose">Files Created and Their Purpose<a href="#files-created-and-their-purpose" class="hash-link" aria-label="Direct link to Files Created and Their Purpose" title="Direct link to Files Created and Their Purpose">​</a></h2>
+<p>This user guide (<code>USER_GUIDE.md</code>) has been created to provide step-by-step instructions for end users of the Spec-Up-T Editor.</p>
+<p><strong>Why this file should stay:</strong></p>
+<ol>
+<li><strong>User-Focused</strong>: Written specifically for end users, not developers or technical implementers</li>
+<li><strong>Step-by-Step Instructions</strong>: Provides detailed, actionable guidance for common tasks</li>
+<li><strong>Workflow Examples</strong>: Shows real-world usage patterns and scenarios</li>
+<li><strong>Troubleshooting</strong>: Addresses common user problems with practical solutions</li>
+<li><strong>Onboarding</strong>: Helps new users get started quickly and successfully</li>
+</ol>
+<p><strong>How to use this file:</strong></p>
+<ol>
+<li><strong>New Users</strong>: Start with &quot;Getting Started&quot; and &quot;Initial Setup&quot; sections</li>
+<li><strong>Occasional Users</strong>: Focus on &quot;Working with Repositories&quot; and &quot;File Management&quot; sections</li>
+<li><strong>Power Users</strong>: Review &quot;Common Workflows&quot; and &quot;Tips and Best Practices&quot;</li>
+<li><strong>Troubleshooting</strong>: Reference the &quot;Troubleshooting&quot; section when problems arise</li>
+<li><strong>Training</strong>: Use as a training manual for teams adopting the tool</li>
+</ol>
+<p>This user guide complements the technical documentation by focusing entirely on practical usage, making the Spec-Up-T Editor accessible to users of all technical levels while maintaining comprehensive coverage of all features and capabilities.</p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/blockchainbird/spec-up-t-website/tree/main/docs/tools/spec-up-t-editor-user-guide.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"><span class="theme-last-updated">Last updated<!-- --> on <b><time datetime="2025-07-25T17:05:19.000Z" itemprop="dateModified">Jul 25, 2025</time></b> by <b>Kor Dwarshuis</b></span></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/spec-up-t-website/docs/tools/compare-spec-up-t-specs"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Compare Spec-Up-T specs.json Files</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/spec-up-t-website/docs/tools/splitter"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Term File Splitter</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#table-of-contents" class="table-of-contents__link toc-highlight">Table of Contents</a></li><li><a href="#getting-started" class="table-of-contents__link toc-highlight">Getting Started</a><ul><li><a href="#what-is-the-spec-up-t-editor" class="table-of-contents__link toc-highlight">What is the Spec-Up-T Editor?</a></li><li><a href="#who-should-use-this-guide" class="table-of-contents__link toc-highlight">Who Should Use This Guide?</a></li><li><a href="#what-youll-need" class="table-of-contents__link toc-highlight">What You&#39;ll Need</a></li></ul></li><li><a href="#initial-setup" class="table-of-contents__link toc-highlight">Initial Setup</a><ul><li><a href="#step-1-creating-a-github-personal-access-token" class="table-of-contents__link toc-highlight">Step 1: Creating a GitHub Personal Access Token</a></li><li><a href="#step-2-first-login" class="table-of-contents__link toc-highlight">Step 2: First Login</a></li></ul></li><li><a href="#navigating-the-interface" class="table-of-contents__link toc-highlight">Navigating the Interface</a><ul><li><a href="#main-navigation-bar" class="table-of-contents__link toc-highlight">Main Navigation Bar</a></li><li><a href="#main-dashboard" class="table-of-contents__link toc-highlight">Main Dashboard</a></li></ul></li><li><a href="#working-with-repositories" class="table-of-contents__link toc-highlight">Working with Repositories</a><ul><li><a href="#accessing-a-repository" class="table-of-contents__link toc-highlight">Accessing a Repository</a></li><li><a href="#repository-structure" class="table-of-contents__link toc-highlight">Repository Structure</a></li></ul></li><li><a href="#file-management" class="table-of-contents__link toc-highlight">File Management</a><ul><li><a href="#file-explorer-interface" class="table-of-contents__link toc-highlight">File Explorer Interface</a></li><li><a href="#navigating-folders" class="table-of-contents__link toc-highlight">Navigating Folders</a></li><li><a href="#file-filtering" class="table-of-contents__link toc-highlight">File Filtering</a></li><li><a href="#creating-new-files" class="table-of-contents__link toc-highlight">Creating New Files</a></li></ul></li><li><a href="#editing-files" class="table-of-contents__link toc-highlight">Editing Files</a><ul><li><a href="#opening-a-file" class="table-of-contents__link toc-highlight">Opening a File</a></li><li><a href="#editor-interface" class="table-of-contents__link toc-highlight">Editor Interface</a></li><li><a href="#editor-toolbar" class="table-of-contents__link toc-highlight">Editor Toolbar</a></li><li><a href="#saving-your-changes" class="table-of-contents__link toc-highlight">Saving Your Changes</a></li><li><a href="#working-with-terms-and-definitions" class="table-of-contents__link toc-highlight">Working with Terms and Definitions</a></li></ul></li><li><a href="#external-specifications" class="table-of-contents__link toc-highlight">External Specifications</a><ul><li><a href="#accessing-external-specs-manager" class="table-of-contents__link toc-highlight">Accessing External Specs Manager</a></li><li><a href="#adding-external-specifications" class="table-of-contents__link toc-highlight">Adding External Specifications</a></li><li><a href="#managing-external-specifications" class="table-of-contents__link toc-highlight">Managing External Specifications</a></li><li><a href="#saving-external-specs-changes" class="table-of-contents__link toc-highlight">Saving External Specs Changes</a></li></ul></li><li><a href="#health-monitoring" class="table-of-contents__link toc-highlight">Health Monitoring</a><ul><li><a href="#running-a-health-check" class="table-of-contents__link toc-highlight">Running a Health Check</a></li><li><a href="#understanding-health-check-results" class="table-of-contents__link toc-highlight">Understanding Health Check Results</a></li><li><a href="#acting-on-health-check-results" class="table-of-contents__link toc-highlight">Acting on Health Check Results</a></li></ul></li><li><a href="#tips-and-best-practices" class="table-of-contents__link toc-highlight">Tips and Best Practices</a><ul><li><a href="#file-organization" class="table-of-contents__link toc-highlight">File Organization</a></li><li><a href="#writing-effective-specifications" class="table-of-contents__link toc-highlight">Writing Effective Specifications</a></li><li><a href="#working-with-teams" class="table-of-contents__link toc-highlight">Working with Teams</a></li><li><a href="#security-best-practices" class="table-of-contents__link toc-highlight">Security Best Practices</a></li></ul></li><li><a href="#common-workflows" class="table-of-contents__link toc-highlight">Common Workflows</a><ul><li><a href="#workflow-1-creating-a-new-specification" class="table-of-contents__link toc-highlight">Workflow 1: Creating a New Specification</a></li><li><a href="#workflow-2-editing-an-existing-specification" class="table-of-contents__link toc-highlight">Workflow 2: Editing an Existing Specification</a></li><li><a href="#workflow-3-setting-up-external-references" class="table-of-contents__link toc-highlight">Workflow 3: Setting Up External References</a></li><li><a href="#workflow-4-collaborative-review-process" class="table-of-contents__link toc-highlight">Workflow 4: Collaborative Review Process</a></li><li><a href="#workflow-5-regular-maintenance" class="table-of-contents__link toc-highlight">Workflow 5: Regular Maintenance</a></li></ul></li><li><a href="#troubleshooting" class="table-of-contents__link toc-highlight">Troubleshooting</a><ul><li><a href="#authentication-issues" class="table-of-contents__link toc-highlight">Authentication Issues</a></li><li><a href="#file-loading-problems" class="table-of-contents__link toc-highlight">File Loading Problems</a></li><li><a href="#external-specifications-problems" class="table-of-contents__link toc-highlight">External Specifications Problems</a></li><li><a href="#performance-issues" class="table-of-contents__link toc-highlight">Performance Issues</a></li><li><a href="#getting-help" class="table-of-contents__link toc-highlight">Getting Help</a></li></ul></li><li><a href="#files-created-and-their-purpose" class="table-of-contents__link toc-highlight">Files Created and Their Purpose</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/blockchainbird/spec-up-t-website" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div></div></footer></div>
+</body>
+</html>
